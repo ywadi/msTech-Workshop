@@ -37,8 +37,27 @@ Create an IoT hub for your simulated device app to connect to. The following ste
 
 ![Shared access policies blade](https://docs.microsoft.com/en-us/azure/includes/media/iot-hub-get-started-create-hub/create-iot-hub5.png)
 
-You have now created your IoT hub. You have the IoT Hub host name and the IoT Hub connection string that you need to complete the rest of this tutorial.+
+You have now created your IoT hub.
 
+## Registering a Device 
+
+1. Instal the device explorer using NodeJS, to download nodejs please reffer to https://nodejs.org/en/download/package-manager/
+
+2. Download the iothub-explorer CLI tool 
+`npm install iothub-explorer`
+
+3. Copy your connection string from the Zure portal 
+
+![key](https://docs.microsoft.com/en-us/azure/includes/media/iot-hub-get-started-create-hub/create-iot-hub5.png)
+
+
+4. Use the iothub-explorer tool to create a device and generate a sas token 
+
+- Create Device `iothub-explorer create myArduino --login '{connection string}'`
+
+- Create SaS Token `iothub-explorer sas-token myArduino --login {connection string}`
+
+- Save your SaS token 'SharedAccessSignature sr=####&se=####'
 
 
 
