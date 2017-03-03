@@ -59,5 +59,9 @@ You have now created your IoT hub.
 
 - Save your SaS token 'SharedAccessSignature sr=####&se=####'
 
+### Install the Arduino IDE from the following link 
+
+https://www.arduino.cc/en/main/software
+
 
 
